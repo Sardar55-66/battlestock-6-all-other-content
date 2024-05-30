@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./src/sass/battleroom_all.css">    
+    <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-grid.css">
+    <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
+    <title>Battle Stock</title>
+</head>
+<body>
+
+    <div class="first-wrapper">
+        <div class="container-fluid main p-0">
+            <div class="mobile-header_activation w-100">
+                <div class="row mobile-header mobile-header_inner w-100">
+                    <div class="col-12 d-flex justify-content-between align-items-center w-100">
+                        <div class="account-info d-flex">
+                            <div class="header__avatar">
+                                <img src="./src/assets/logos/avatar-icon.svg" alt="avatar-icon">
+                            </div>
+                            <div class="header__name-id">
+                                <span class="name">Davis</span>
+                                <span class="id">ID <span class="id-number">12345678</span></span>
+                            </div>
+                        </div>
+                        <div class="d-flex burger-container justify-content-center" onclick="window.mobileMenu.showModal()">
+                            <input type="checkbox" id="burger-checkbox" class="burger-checkbox" type="text">
+                            <label class="burger" for="burger-checkbox"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="row wrappers">
+                <div class="col-2 sidebars sidebars-main_wrapper sidebar-activation">
+                    <section class="sidebar sidebars-inner_wrapper sidebar-activation">
+                       
+                        <header class="sidebar__header">
+                            <div class="sidebar-avatar-id__wrapper">
+                                <div class="header__avatar">
+                                    <img src="./src/assets/logos/avatar-icon.svg" alt="avatar-icon">
+                                </div>
+                                <div class="header__name-id">
+                                    <span class="name">Davis</span>
+                                    <span class="id">ID <span class="id-number">12345678</span></span>
+                                </div>
+                            </div>
+                            <div class="header__account-verification">
+                                <div class="verification-wrapper">
+                                    <img class="verification-icon" src="./src/assets/icons/shield-green.svg" alt="verification-icon">
+                                    <span class="verification-warning">Account not verified</span>
+                                </div>
+                                <a class="verify-now" href="#">Verify Now</a>
+                            </div>
+                        </header>
+            
+                        <div class="sidebar-menu-list w-100 ml-4">
+                            <div class="row w-75 mb-2 mt-3">
+                                <div class="col-12 p-0">
+                                    <div class="status-bar">Marshall</div>
+                                </div>
+                                <div class="col first-col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/bank-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__account-info">
+                                        <a href="#" class="sidebar-menu__balance_title">Main Balance</a>
+                                        <a href="#" class="sidebar-menu__balance">$1000</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2 mt-3">
+                                <div class="col first-col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/score-points.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__account-info">
+                                        <a href="#" class="sidebar-menu__balance_title">Score Points</a>
+                                        <a href="#" class="sidebar-menu__balance sidebar-score_points">234572</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/deposit-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Deposit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/withdraw-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Withdrawal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/transaction-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Transactions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/settings-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Personal settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/my-battles-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">My battles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/leaderborad-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Leaderboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/followers-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Followers</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row w-75 mb-2">
+                                <div class="col">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/support-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Support</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="containers-second_main">
+                    <div class="row w-100 mb-5 header-wrapper"> 
+                        <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers mobile-header_icon w-100 d-flex align-items-end justify-content-center">
+                            <a href="#">
+                                <img class="logo-img logo-img_main-logo" src="./src/assets/logos/stock-battle-logo.svg" alt="stock_battle-logo">
+                            </a>
+                        </div>
+                            <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers w-100 d-flex align-items-end justify-content-center">
+                                <a class="visible-header__buttons" href="#">
+                                    <img class="logo-img"  src="./src/assets/logos/battle-room-logo.png" alt="battle_room-logo">
+                                </a>
+                                <!-- иконка мобильной версии -->
+                                <a class="hidden-header__buttons header-button_active-status" href="#">
+                                    <div class="header-button">
+                                        <img class="logo-img" src="./src/assets/icons/sword-icon.svg" alt="stock_battle-logo">
+                                        <span class="header-button__text">BATTLE ROOM</span>
+                                    </div>
+                                </a>
+                            </div>
+                        <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers w-100 d-flex align-items-end justify-content-center">
+                            <a class="visible-header__buttons href="#">
+                                <img class="logo-img" src="./src/assets/logos/vip-room-logo.png" alt="vip_room-logo">
+                            </a>
+                            <!-- иконка мобильной версии -->
+                            <a class="hidden-header__buttons" href="#">
+                                <div class="header-button">
+                                    <img class="logo-img" src="./src/assets/icons/crown-icon.svg" alt="vip_room-logo">
+                                    <span class="header-button__text">VIP ROOM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers w-100 d-flex align-items-end justify-content-center">
+                            <a class="visible-header__buttons href="#">
+                                <img class="logo-img" src="./src/assets/logos/poker-room-logo.png" alt="poker_room-logo">
+                            </a>
+                            <!-- иконка мобильной версии -->
+                            <a class="hidden-header__buttons" href="#">
+                                <div class="header-button">
+                                    <img class="logo-img" src="./src/assets/icons/poker-room-icon.svg" alt="poker_room-logo">
+                                    <span class="header-button__text">POKER ROOM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers w-100 d-flex align-items-end justify-content-center">
+                            <a class="visible-header__buttons href="#">
+                                <img class="logo-img" src="./src/assets/logos/stock-vs-stock.png" alt="stock-vs-stock_logo">
+                            </a>
+                            <!-- иконка мобильной версии -->
+                            <a class="hidden-header__buttons" href="#">
+                                <div class="header-button">
+                                    <img class="logo-img" src="./src/assets/icons/candles-icon.svg" alt="stock-vs-stock_logo">
+                                    <span class="header-button__text">STOCK VS STOCK</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div  class=" col-12 col-sm-12 col-md-12 col-lg-2 headers w-100 header__date d-flex align-items-end justify-content-center ordered-item">
+                            <div class="date-wrapper">
+                                <div class="month">
+                                    <img class="clock-icon" src="./src/assets/icons/clock-icon.png" alt="clock-icon">
+                                    Mar
+                                </div>
+                                <div class="time order-lg-1">10:27:54 <span>AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-center game-info_panel"> 
+    
+                        <div class="navbar game-info-container-navigation_panel">
+                           
+                            <ul>
+                                <li>
+                                    <a class="nav-panel_active" href="#">All</a>
+                                </li>
+                                <li id="activated-game-info-panel">
+                                    <a href="#">Open</a>   
+                                </li>
+                                <li>
+                                    <a href="#">Live</a>  
+                                </li>
+                                <li>
+                                    <a href="#">Finished</a> 
+                                </li>
+                                <li class="pick-stock_desktop">
+                                    <a class="pick-one-stock" href="#">Pick 1 stock</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="desktop-active">
+                                        <img src="./src/assets/icons/refresh.svg" alt="refresh-button" class="refresh-icon">
+                                    </a>
+                                </li>
+                                <li class="pick-stock_desktop">
+                                    <a class="pick-three-stock" href="#">Pick 3 stock</a>
+                                </li>
+                                <li>
+                                    <a class="question-mark-link active-mark" href="#" onclick="window.myDialog.showModal()">
+                                        <img src="./src/assets/icons/question-mark.svg" alt="question-mark" class="question-mark">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <span class="pick-stock_mobile">
+                                <div class="pick-stock_mobile">
+                                    <div class="d-flex ">
+                                        <a class="pick-one-stock" href="#">Pick 1 stock</a>
+                                    </div>
+                                    <div class="d-flex justify-content-end refresh-btn-wrapper">
+                                        <a href="#">
+                                            <img src="./src/assets/icons/refresh.svg" alt="refresh-button" class="refresh-icon">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <a class="pick-three-stock" href="#">Pick 3 stock</a>
+                                    </div>
+                                    <div class="d-flex question-mark_wrapper>
+                                        <a class="question-mark-link" href="#">
+                                            <img src="./src/assets/icons/question-mark.svg" alt="question-mark" class="question-mark">
+                                        </a>
+                                    </div>
+                                </div>
+                            </span>
+
+                        </div>
+    
+                            <div class="row w-100 elapsed first-column containers-wrapper containers-wrapper__first">
+                              
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free">Free room 1</span> <br> <span class="play-amount"></span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
+                                            <a href="#" class="btn card-submit_btn">Enter</a>
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">10$</span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-icon.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <span class="finished">Finished</span>
+                                            <!-- <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div> -->
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">50$</span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <button type="button" class="btn joined-btn">
+                                            <div class="joined-btn_icon">
+                                                <img src="./src/assets/icons/joined.svg" alt="joined-btn_icon">
+                                            </div>
+                                            Joined
+                                          </button>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-50.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <!-- <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5> -->
+                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Ends in <span class="player-amount">6h 29m 49s</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free">Free room 2</span> <br> <span class="play-amount"></span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
+                                            <a href="#" class="btn card-submit_btn">Enter</a>
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="row w-100 elapsed second-column containers-wrapper containers-wrapper__first">
+                              
+                                <div class="col-lg-3 col-xs-12 col-md-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">100$</span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-250.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Finished</div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">250$</span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <button type="button" class="btn joined-btn">
+                                            <div class="joined-btn_icon">
+                                                <img src="./src/assets/icons/joined.svg" alt="joined-btn_icon">
+                                            </div>
+                                            Joined
+                                          </button>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-500.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <!-- <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <a href="#" class="btn card-submit_btn">Enter</a> -->
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Ends<span class="player-amount">6h 29m 49s</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free">Free room 3</span> <br> <span class="play-amount"></span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
+                                            <a href="#" class="btn card-submit_btn">Enter</a>
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="card card-mod">
+                                        <div class="card-header">
+                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">1000$</span>
+                                          </div>
+                                          <span class="big-divider"></span>
+                                          <span class="small-divider"></span>
+                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-1000.svg" alt="diamonds">
+                                          <div class="card-body">
+                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
+                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
+                                            <a href="#" class="btn players-info_btn">View Players</a>
+                                            <div class="start-time">SFinished</span></div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        
+                    </div>                 
+                </div>
+           </div>
+        </div>
+    
+        <div class="container-fluid d-flex justify-content-center footer-wrapper_battle-room__open">
+            <footer class="footer d-flex justify-content-end battle-open__room">
+                <div class="row d-flex justify-content-end footer-wrap">
+                    <div class="col footer-wrapper">
+                        <h3 class="footer__title">Regulations & Partners</h3>
+                        <div class="footer__logos">
+                            <img src="./src/assets/icons/footer.svg" alt="footer__logos">
+                        </div>
+                        <h3 class="footer__subtitle">© 2024 StockBattle.  All rights reserved.</h3>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+        <dialog id="myDialog" class="modal-game_rules" aria-label="game-rules">
+           <button type="button" class="modal-close_btn" onclick="window.myDialog.close()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFD762" height="25px" width="25px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                <g>
+                    <g>
+                        <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   "/>
+                    </g>
+                </g>
+                </svg>
+           </button>
+           <div class="question_mark">
+            <img src="./src/assets/icons/question-mark.svg" alt="question-mark">
+           </div>
+           <div class="modal-title">Battle Rules</div>
+           <div class="modal-text">Each player has to pick 1 or 3 stocks. The start and end of the Battle depend on the opening hours of the stock exchange. Winner is determined by best performing stock combination.</div>
+
+           <div class="profit-tb_modal">
+            <div class="profit-tb__title-modal">Profit table</div>
+            <table class="profit-tb__table modal-table">
+                <thead>
+                    <tr>
+                        <th>Players/<br/>Position</th>
+                        <th>1-7</th>
+                        <th>8</th>
+                        <th class="active-profit">9-11</th>
+                        <th>12-20</th>
+                        <th>21-30</th>
+                        <th>31-50</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>100.0%</td>
+                        <td>60,0%</td>
+                        <td class="active-profit">50,0%</td>
+                        <td>40,0%</td>
+                        <td>36,0%</td>
+                        <td>34,0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>-</td>
+                        <td>40,0%</td>
+                        <td class="active-profit">30.0%</td>
+                        <td>27,0%</td>
+                        <td>25,0%</td>
+                        <td>23,0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>3.</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active-profit">20,0%</td>
+                        <td>19,0%</td>
+                        <td>17,5%</td>
+                        <td>16,5%</td>
+                    </tr>
+
+                    <tr>
+                        <td>4.</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active-profit">-</td>
+                        <td>14.0%</td>
+                        <td>12.8%</td>
+                        <td>11.9%</td>
+                    </tr>
+
+                    <tr>
+                        <td>5.</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active-profit">-</td>
+                        <td>-</td>
+                        <td>8,0%</td>
+                        <td>8,7%</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>6.</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active-profit">-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>6,6%</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="score-points">
+                                          
+            <div class="score-points__title-modal">Score Points</div>
+            <table class="score-points__table-modal">
+                <thead class="score-points__thead">
+                    <tr class="score-points__tr">
+                        <th>
+                            <div class="score-points__table-logo">
+                                <img src="./src/assets/icons/marshal.svg" alt="table-logo">
+                            </div>
+                            <div class="score-points__table-title marshall">Marshall</div>
+                            <div class="score-points__table-balance">1000p</div>
+                        </th>
+                        <th>
+                            <div class="score-points__table-logo">
+                                <img src="./src/assets/icons/general.svg" alt="table-logo">
+                            </div>
+                            <div class="score-points__table-title general">General</div>
+                            <div class="score-points__table-balance">500p</div>
+                        </th>
+                        <th>
+                            <div class="score-points__table-logo">
+                                <img src="./src/assets/icons/major.svg" alt="table-logo">
+                            </div>
+                            <div class="score-points__table-title major">Major</div>
+                            <div class="score-points__table-balance">250p</div>
+                        </th>
+                        <th>
+                            <div class="score-points__table-logo">
+                                <img src="./src/assets/icons/sergeant.svg" alt="table-logo">
+                            </div>
+                            <div class="score-points__table-title sergeant">Sergeant</div>
+                            <div class="score-points__table-balance">100p</div>
+                        </th>
+                        <th>
+                            <div class="score-points__table-logo">
+                                <img src="./src/assets/icons/corporal.svg" alt="table-logo">
+                            </div>
+                            <div class="score-points__table-title corporal">Corporal</div>
+                            <div class="score-points__table-balance">50p</div> 
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="score-points__tr">
+                        <td class="score-points__td">
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                    </tr>
+                    <tr class="score-points__tr">
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                        <td>
+                            <div class="score-points__table-body_title">1st</div>
+                            <div class="score-points__table-body_text">12p</div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        </dialog>  
+        
+        <div id="mobileMenu" class="mobile-menu_modal activation-mobile-menu_modal" aria-label="mobile-menu">
+            
+                <section class="sidebar-modal">
+                       
+                    <header class="sidebar__header">
+                        <div class="header__account-verification-modal">
+                            <div class="verification-wrapper">
+                                <img class="verification-icon" src="./src/assets/icons/not-verified.png" alt="verification-icon">
+                                <span class="verification-warning">Account not verified</span>
+                            </div>
+                            <a href="#" class="verify-now-modal" href="#">Verify Now</a>
+                        </div>
+                    </header>
+        
+                    <div class="sidebar-menu-list">
+                        <div class="row w-100 mb-2 mt-3">
+                            <div class="col first-col justify-content-center">
+                                <div class="sidebar-modal_wrapper">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/bank-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__account-info">
+                                        <a href="#" class="sidebar-menu__balance_title">Main Balance</a>
+                                        <a href="#" class="sidebar-menu__balance">$1000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100 mb-2 mt-3">
+                            <div class="col first-col justify-content-center">
+                                <div class="sidebar-modal_wrapper">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/score-points.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__account-info">
+                                        <a href="#" class="sidebar-menu__balance_title">Score Points</a>
+                                        <a href="#" class="sidebar-menu__balance sidebar-score_points">234572</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                               <div class="sidebar-modal_wrapper">
+                                <div class="sidebar-menu__icon">
+                                    <img class="sidebar-menu__icon" src="./src/assets/icons/deposit-icon.png" alt="bank-icon">
+                                </div>
+                                <div class="sidebar-menu__btn-info">
+                                    <a href="#" class="sidebar-menu__btn_title">Deposit</a>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                                <div class="sidebar-modal_wrapper">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/withdraw-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Withdrawal</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                                <div class="sidebar-modal_wrapper">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/transaction-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Transactions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                               <div class="sidebar-modal_wrapper">
+                                <div class="sidebar-menu__icon">
+                                    <img class="sidebar-menu__icon" src="./src/assets/icons/settings-icon.png" alt="bank-icon">
+                                </div>
+                                <div class="sidebar-menu__btn-info">
+                                    <a href="#" class="sidebar-menu__btn_title">Personal settings</a>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                               <div class="sidebar-modal_wrapper">
+                                <div class="sidebar-menu__icon">
+                                    <img class="sidebar-menu__icon" src="./src/assets/icons/my-battles-icon.png" alt="bank-icon">
+                                </div>
+                                <div class="sidebar-menu__btn-info">
+                                    <a href="#" class="sidebar-menu__btn_title">My battles</a>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                                <div class="sidebar-modal_wrapper">
+                                    <div class="sidebar-menu__icon">
+                                        <img class="sidebar-menu__icon" src="./src/assets/icons/leaderborad-icon.png" alt="bank-icon">
+                                    </div>
+                                    <div class="sidebar-menu__btn-info">
+                                        <a href="#" class="sidebar-menu__btn_title">Leaderboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                              <div class="sidebar-modal_wrapper">
+                                <div class="sidebar-menu__icon">
+                                    <img class="sidebar-menu__icon" src="./src/assets/icons/followers-icon.png" alt="bank-icon">
+                                </div>
+                                <div class="sidebar-menu__btn-info">
+                                    <a href="#" class="sidebar-menu__btn_title">Followers</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row w-75 mb-2">
+                            <div class="col justify-content-center">
+                             <div class="sidebar-modal_wrapper">
+                                <div class="sidebar-menu__icon">
+                                    <img class="sidebar-menu__icon" src="./src/assets/icons/support-icon.png" alt="bank-icon">
+                                </div>
+                                <div class="sidebar-menu__btn-info">
+                                    <a href="#" class="sidebar-menu__btn_title">Support</a>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </section>
+            
+        </div>
+        
+        <script src="./src/js/script.js"></script>
+        <script src="./src/js/mobileModal.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "min-width: fit-content"
+        ]
+      }
+    ],
+    "axe/name-role-value": "off"
+  }
+}
