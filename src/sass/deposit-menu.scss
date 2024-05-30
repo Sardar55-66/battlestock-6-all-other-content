@@ -227,7 +227,7 @@ img {
 
 .sidebars-inner_wrapper {
     position: absolute;
-    height: calc(231% + 16px);
+    height: calc(237% + 16px);
     border-bottom: none;
 }
 .sidebar__header {
@@ -411,6 +411,9 @@ img {
 
 
 .deposit-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,7 +424,6 @@ img {
     -webkit-box-shadow: -1px 0px 15px 1px rgba(213, 213, 42, 0.72);
     -moz-box-shadow: -1px 0px 15px 1px rgba(213, 213, 42, 0.72);
     box-shadow: -1px 0px 15px 1px rgba(213, 213, 42, 0.72);
-    min-height: 290px;
     align-items: center;
 }
 
@@ -441,6 +443,7 @@ img {
 }
 
 .deposit-container_main-balance {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -452,7 +455,7 @@ img {
 }
 .deposit-payment {
     width: 98%;
-    height: 150px;
+    height: 140px;
 }
 .deposit-payment_inputs>label {
     width: 50%;
@@ -462,13 +465,22 @@ img {
     font-weight: 400;
 }
 
+.paypal-active {
+    display: flex;
+}
+.paypal-inactive {
+    display: none !important;
+}
+
 .deposit-payment_inputs {
+    height: 80px;
     margin-top: 10px;
     display: flex;
     width: 100%;
 }
 
 .wallet-address {
+    margin-top: 10px;
     width: 98%;
     height: 50px;
 }
@@ -492,6 +504,7 @@ img {
 
 
 .dropdown-item {
+    background-color: #521A49;
     color: #fff;
     font-family: 'Gordita';
     font-weight: 200;
@@ -515,8 +528,14 @@ img {
 .dropdown-toggle:after {
     color: #FFD762;
 }
+.payment-amount {
+    padding: 5px;
+}
 
 .payment-method, .payment-amount {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Gordita';
     margin-top: 10px;
     width: 100%;
     height: 37px;
@@ -526,23 +545,44 @@ img {
     background-color: #340432;
 }
 
-.payment-method {
+.payment-method, .dropdown-item {
     border: 1px solid #F8D05F;
 }
 
-.second-input {
+.dropdown-item {
+    border-radius: 5px;
+}
+.dropdown-item:hover {
+    color: #fff;
+    background-color: #521A49;
+}
+
+.second-input, .second-input-paypal {
     margin-left: 25px;
     display: inline-block;
 }
+
 .payment-amount::placeholder {
+    float: right;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.second-input::after {
+    content: "";
+    position: relative;
     width: 79px;
-    height: 100%;
-    background-color: #521A49;
+    height: 37px;
+    background-color: rgba(82, 26, 73, 0.4);
+    // background-color: #521A49;
     color: #fff;
     float: right;
-   text-align: center;
-   vertical-align: baseline;
-   padding-top: 5px;
+    text-align: center;
+    vertical-align: baseline;
+    padding-top: 5px;
+    top: -37px;
+    z-index: 0;
 }
 .currency {
     display: inline-block;
@@ -554,21 +594,23 @@ img {
 
 .dropdown-menu {
     width: 100%;
-    background-color: #521A49;
+    background: none;
 }
 .payment-method {
     margin-right: 25px;
 }
 
 .input-submit-btn {
+    margin-left: 3px;
     margin-top: 10px;
-    width: 49%;
+    width: 48%;
     height: 38px;
     background-color: #FFD762;
     font-size: 16px;
     font-family: 'Gordita';
     border-radius: 5px;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .game-info-container-navigation_panel {
@@ -882,6 +924,14 @@ img {
 
 @media(max-width: 1025px) {
 
+    .wrappers {
+        width: 100vw;
+    }
+
+    .input-submit-btn {
+        margin-top: 90px !important;
+    }
+
     .deposit-payment_inputs>label {
         width: 100%;
     }
@@ -897,7 +947,7 @@ img {
     }
 
     .wallet-address {
-        margin-top: 20px;
+        margin-top: 90px;
     }
 
     .input-submit-btn {
@@ -905,8 +955,7 @@ img {
         margin-top: 55px;
     }
     .deposit-container {
-        width: 98%;
-        min-height: 450px;
+        width: 100%;
     }
 
     .deposit-payment_inputs {
@@ -1047,6 +1096,10 @@ img {
     .game-info-container-navigation_panel {
         font-size: 18px;
     }
+    .game-info-container-navigation_panel>ul {
+        justify-content: start;
+        margin-left: 10px;
+    }
 
     .no-players_wrapper {
         width: 90%;
@@ -1093,6 +1146,9 @@ img {
    
 
     .containers-second_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 90% !important;
         margin: 0 auto !important;
     }
@@ -1144,6 +1200,10 @@ img {
 
 @media(max-width: 450px) {
 
+
+    .deposit-main_balance-title, .deposit-main_balance-count {
+        width: 37%;
+    }
     .left-right-container_headers {
         margin-left: 4%;
     }
