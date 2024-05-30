@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./src/sass/battleroom_all.css">    
+    
+    <link rel="stylesheet" href="./src/sass/bootstrap.min.css">   
+   
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-grid.css">
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./src/sass/deposit-menu.css"> 
     <title>Battle Stock</title>
 </head>
 <body>
@@ -55,8 +58,8 @@
                             </div>
                         </header>
             
-                        <div class="sidebar-menu-list w-100 ml-4">
-                            <div class="row w-75 mb-2 mt-3">
+                        <div class="sidebar-menu-list w-100 d-flex align-items-center flex-column">
+                            <div class="row mb-2 mt-3">
                                 <div class="col-12 p-0">
                                     <div class="status-bar">Marshall</div>
                                 </div>
@@ -70,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2 mt-3">
+                            <div class="row mb-2 mt-3">
                                 <div class="col first-col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/score-points.png" alt="bank-icon">
@@ -81,7 +84,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/deposit-icon.png" alt="bank-icon">
@@ -91,7 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/withdraw-icon.png" alt="bank-icon">
@@ -101,7 +104,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/transaction-icon.png" alt="bank-icon">
@@ -111,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/settings-icon.png" alt="bank-icon">
@@ -121,7 +124,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/my-battles-icon.png" alt="bank-icon">
@@ -131,7 +134,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/leaderborad-icon.png" alt="bank-icon">
@@ -141,7 +144,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/followers-icon.png" alt="bank-icon">
@@ -151,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row w-75 mb-2">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/support-icon.png" alt="bank-icon">
@@ -235,217 +238,50 @@
                            
                             <ul>
                                 <li>
-                                    <a class="nav-panel_active" href="#">All</a>
-                                </li>
-                                <li id="activated-game-info-panel">
-                                    <a href="#">Open</a>   
-                                </li>
-                                <li>
-                                    <a href="#">Live</a>  
-                                </li>
-                                <li>
-                                    <a href="#">Finished</a> 
-                                </li>
-                                <li class="pick-stock_desktop">
-                                    <a class="pick-one-stock" href="#">Pick 1 stock</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="desktop-active">
-                                        <img src="./src/assets/icons/refresh.svg" alt="refresh-button" class="refresh-icon">
-                                    </a>
-                                </li>
-                                <li class="pick-stock_desktop">
-                                    <a class="pick-three-stock" href="#">Pick 3 stock</a>
-                                </li>
-                                <li>
-                                    <a class="question-mark-link active-mark" href="#" onclick="window.myDialog.showModal()">
-                                        <img src="./src/assets/icons/question-mark.svg" alt="question-mark" class="question-mark">
-                                    </a>
+                                    <a class="nav-panel_active" href="#">Deposit</a>
                                 </li>
                             </ul>
-
-                            <span class="pick-stock_mobile">
-                                <div class="pick-stock_mobile">
-                                    <div class="d-flex ">
-                                        <a class="pick-one-stock" href="#">Pick 1 stock</a>
-                                    </div>
-                                    <div class="d-flex justify-content-end refresh-btn-wrapper">
-                                        <a href="#">
-                                            <img src="./src/assets/icons/refresh.svg" alt="refresh-button" class="refresh-icon">
-                                        </a>
-                                    </div>
-                                    <div class="d-flex ">
-                                        <a class="pick-three-stock" href="#">Pick 3 stock</a>
-                                    </div>
-                                    <div class="d-flex question-mark_wrapper>
-                                        <a class="question-mark-link" href="#">
-                                            <img src="./src/assets/icons/question-mark.svg" alt="question-mark" class="question-mark">
-                                        </a>
-                                    </div>
-                                </div>
-                            </span>
 
                         </div>
     
                             <div class="row w-100 elapsed first-column containers-wrapper containers-wrapper__first">
-                              
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free">Free room 1</span> <br> <span class="play-amount"></span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
-                                            <a href="#" class="btn card-submit_btn">Enter</a>
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
-                                          </div>
+                                <div class="deposit-container">
+                                    <div class="deposit-container_main-balance">
+                                        <div class="deposit-main_balance-title">Main balance</div>
+                                        <div class="deposit-main_balance-count">1,000 USDT</div>
                                     </div>
-                                </div>
 
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">10$</span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-icon.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <span class="finished">Finished</span>
-                                            <!-- <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div> -->
-                                          </div>
-                                    </div>
-                                </div>
+                                    <form action="#" class="deposit-payment">
+                                        <div class="deposit-payment_inputs">
+                                            <label> Payment method
+                                                <div class="dropdown payment-method">
+                                                    <button  class="btn dropdown-toggle selected-dropdown-item" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                      USDT wallet
+                                                    </button>
+                                                    <ul class="dropdown-menu" data-bs-toggle="dropdown">
+                                                      <li><a class="dropdown-item" href="#">USDT wallet</a></li>
+                                                      <li><a class="dropdown-item" href="#">Paypall</a></li>
+                                                      <!-- <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li> -->
+                                                    </ul>
+                                                  </div>
+                                            </label>
+                                            <label class="second-input"> Amount
+                                                <input type="text" class="payment-amount" placeholder="USDT">
+                                            </label>
+                                        </div>
 
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">50$</span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <button type="button" class="btn joined-btn">
-                                            <div class="joined-btn_icon">
-                                                <img src="./src/assets/icons/joined.svg" alt="joined-btn_icon">
-                                            </div>
-                                            Joined
-                                          </button>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-50.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <!-- <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5> -->
-                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Ends in <span class="player-amount">6h 29m 49s</span></div>
-                                          </div>
-                                    </div>
-                                </div>
+                                      <button type="button" class="btn input-submit-btn">Submit</button>
+                                    </form>
 
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free">Free room 2</span> <br> <span class="play-amount"></span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
-                                            <a href="#" class="btn card-submit_btn">Enter</a>
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
-                                          </div>
+                                    <div class="wallet-address">
+                                        <span>Wallet address: </span>
+                                        <a href="" class="wallet-address_link">3JrD7PqKSuoa7Cr4iWwgD3WXbhRkmAcXHB</a>
+                                        <img src="./src/assets/icons/copy-icon.svg" alt="copy-icon">
                                     </div>
+
                                 </div>
                             </div>
                             
-
-                            <div class="row w-100 elapsed second-column containers-wrapper containers-wrapper__first">
-                              
-                                <div class="col-lg-3 col-xs-12 col-md-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">100$</span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-250.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Finished</div>
-                                          </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">250$</span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <button type="button" class="btn joined-btn">
-                                            <div class="joined-btn_icon">
-                                                <img src="./src/assets/icons/joined.svg" alt="joined-btn_icon">
-                                            </div>
-                                            Joined
-                                          </button>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-500.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <!-- <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <a href="#" class="btn card-submit_btn">Enter</a> -->
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Ends<span class="player-amount">6h 29m 49s</span></div>
-                                          </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free">Free room 3</span> <br> <span class="play-amount"></span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/sword-icon.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <h5 class="card-title players">Limit of player<span class="player-amount">50</span></h5>
-                                            <a href="#" class="btn card-submit_btn">Enter</a>
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">Starts in <span class="player-amount">6h 29m 49s</span></div>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-xs-12">
-                                    <div class="card card-mod">
-                                        <div class="card-header">
-                                            <span class="free free-uppercase">play</span> <br> <span class="play-amount">1000$</span>
-                                          </div>
-                                          <span class="big-divider"></span>
-                                          <span class="small-divider"></span>
-                                          <img class="card-diamond_icon" src="./src/assets/icons/diamonds-1000.svg" alt="diamonds">
-                                          <div class="card-body">
-                                            <h5 class="card-title players"><span class="player-amount">8</span> players joined</h5>
-                                            <!-- <a href="#" class="btn card-submit_btn">Enter</a> -->
-                                            <a href="#" class="btn players-info_btn">View Players</a>
-                                            <div class="start-time">SFinished</span></div>
-                                          </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        
                     </div>                 
                 </div>
            </div>
@@ -810,8 +646,10 @@
                 </section>
             
         </div>
-        
-        <script src="./src/js/script.js"></script>
+        <script src="./src/js/jquery-3.6.0.min.js"></script>
         <script src="./src/js/mobileModal.js"></script>
+        <script src="./src/js/bootstrap.bundle.js"></script>
+        <script src="./src/js/bootstrap-dropdown.js"></script>
+
 </body>
 </html>
