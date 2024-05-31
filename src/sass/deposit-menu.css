@@ -872,7 +872,11 @@ img {
   height: 25px;
 }
 
-.hidden-header__buttons > .header-button > img {
+.header-button_wrapper {
+  width: 50%;
+}
+
+.hidden-header__buttons > div > .header-button > img {
   width: 28px;
   height: 28px;
   margin-right: 10px;
@@ -884,11 +888,11 @@ img {
 }
 
 .header-button {
-  width: 57%;
+  position: absolute;
+  top: 10px;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 25%;
 }
 
 .header-button__text {
@@ -974,6 +978,9 @@ img {
   }
 }
 @media (max-width: 1025px) {
+  .header-button_wrapper {
+    width: 25%;
+  }
   .input-submit-btn {
     margin-top: 90px !important;
   }
@@ -1145,7 +1152,6 @@ img {
     display: flex !important;
   }
   .containers-wrapper, .containers-wrapper__first {
-    margin-right: -12px !important;
     align-content: center;
     flex-direction: column;
     width: 100%;
@@ -1185,6 +1191,12 @@ img {
   }
 }
 @media (max-width: 450px) {
+  .wallet-address > img {
+    position: absolute;
+  }
+  .header-button_wrapper {
+    width: 50%;
+  }
   .second-input:after {
     top: -46px;
   }
@@ -1208,9 +1220,6 @@ img {
   }
   div.elapsed {
     padding-bottom: 0px !important;
-  }
-  .header-button {
-    width: 60%;
   }
   .game-info-container-navigation_panel {
     font-size: 14px;
@@ -1252,9 +1261,6 @@ img {
 @media (max-width: 331px) {
   .deposit-main_balance-title, .deposit-main_balance-count {
     width: 45%;
-  }
-  .header-button {
-    width: 75%;
   }
   .wallet-address {
     width: 100%;

@@ -827,7 +827,11 @@ img {
     width: 25px;
     height: 25px;
 }
-.hidden-header__buttons>.header-button>img {
+
+.header-button_wrapper {
+    width: 50%;
+}
+.hidden-header__buttons>div>.header-button>img {
     width: 28px;
     height: 28px;
     margin-right: 10px;
@@ -839,11 +843,13 @@ img {
 }
 
 .header-button {
-    width: 57%;
+    position: absolute;
+    top: 10px;
+    // width: 57%;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-left: 25%;
+    // margin-left: 12%;
 }
 .header-button__text {
     margin-top: 10px;
@@ -927,6 +933,10 @@ img {
 }
 
 @media(max-width: 1025px) {
+
+    .header-button_wrapper {
+        width: 25%;
+    }
 
     // .wrappers {
     //     width: 100vw;
@@ -1138,7 +1148,7 @@ img {
     }
 
     .containers-wrapper, .containers-wrapper__first {
-        margin-right: -12px !important;
+        // margin-right: -12px !important;
         align-content: center;
         flex-direction: column;
         width: 100%;
@@ -1207,6 +1217,14 @@ img {
 
 @media(max-width: 450px) {
 
+    .wallet-address>img {
+        position: absolute;
+    }
+
+    .header-button_wrapper {
+        width: 50%;
+    }
+
     .second-input:after {
         top: -46px;
     }
@@ -1239,9 +1257,9 @@ img {
         padding-bottom: 0px !important;
     }
 
-    .header-button {
-        width: 60%;
-    }
+    // .header-button {
+    //     width: 75%;
+    // }
 
     .game-info-container-navigation_panel {
         font-size: 14px;
@@ -1295,9 +1313,11 @@ img {
         width: 45%;
     }
 
-    .header-button {
-        width: 75%;
-    }
+    // .header-button {
+    //     position: relative;
+    //     left: -24px;
+    //     width: 75%;
+    // }
 
     .wallet-address {
         width: 100%;
