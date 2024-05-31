@@ -222,7 +222,7 @@ img {
 
 .sidebars-inner_wrapper {
   position: absolute;
-  height: calc(237% + 16px);
+  height: 73rem;
   border-bottom: none;
 }
 
@@ -1161,6 +1161,9 @@ img {
   }
   .header-wrapper {
     transform: translateY(40px);
+  }
+  .second-input-paypal {
+    margin-left: 0;
   }
   .containers-second_main {
     display: flex;
