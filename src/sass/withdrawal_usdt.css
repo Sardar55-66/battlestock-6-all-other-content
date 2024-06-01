@@ -660,6 +660,10 @@ img {
   background-color: #133D1E !important;
 }
 
+.logo-img {
+  cursor: pointer;
+}
+
 .input-submit-btn {
   margin-left: 1px;
   transform: translateY(-35px);
