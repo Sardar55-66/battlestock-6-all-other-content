@@ -580,7 +580,7 @@ img {
 }
 
 .deposit-payment > label:after {
-  content: "";
+  content: "USDT";
   position: relative;
   width: 79px;
   height: 37px;

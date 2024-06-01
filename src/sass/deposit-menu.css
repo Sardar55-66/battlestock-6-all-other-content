@@ -600,7 +600,7 @@ img {
 }
 
 .second-input::after {
-  content: "";
+  content: "USDT";
   position: relative;
   width: 79px;
   height: 37px;

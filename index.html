@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-grid.css">
     <link rel="stylesheet" href="./src/bootstrap-4.6/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./src/sass/deposit-menu.css"> 
+    <link rel="stylesheet" href="./src/sass/withdrawal_usdt.css"> 
     <title>Battle Stock</title>
 </head>
 <body>
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="row mb-2">
-                                <div class="col active-sidebar-menu">
+                                <div class="col">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/deposit-icon.png" alt="bank-icon">
                                     </div>
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="row mb-2">
-                                <div class="col">
+                                <div class="col active-sidebar-menu">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/withdraw-icon.png" alt="bank-icon">
                                     </div>
@@ -247,7 +247,7 @@
                            
                             <ul>
                                 <li>
-                                    <a class="nav-panel_active" href="#">Deposit</a>
+                                    <a class="nav-panel_active" href="#">Withdrawal</a>
                                 </li>
                             </ul>
 
@@ -265,23 +265,23 @@
                                             <label> Payment method
                                                 <div class="dropdown payment-method">
                                                     <button  class="btn dropdown-toggle selected-dropdown-item" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                      USDT wallet
+                                                        Transfer to USDT wallet
                                                     </button>
                                                     <ul class="dropdown-menu" data-bs-toggle="dropdown">
-                                                      <li><a class="dropdown-item" href="#">USDT wallet</a></li>
+                                                      <li><a class="dropdown-item" href="#">Transfer to USDT wallet</a></li>
                                                       <li><a class="dropdown-item" href="#">Pay pal</a></li>
                                                       <!-- <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li> -->
                                                     </ul>
                                                   </div>
                                             </label>
-                                            <label class="second-input "> Amount
-                                                <input type="text" class="payment-amount" placeholder="USDT">
-                                            </label>
-
-                                            <label class="second-input-paypal paypal-inactive"> Amount
-                                                <input type="text" class="payment-amount ">
+                                            <label class="second-input "> Payment info
+                                                <input type="number" class="payment-amount" placeholder="3JrD7PqKSuoa7Cr4iWwgD3WXbhRkmAcXHB">
                                             </label>
                                         </div>
+
+                                        <label class="second-input_amount"> Amount
+                                            <input type="number" class="input-amount">
+                                        </label>
 
                                       <button type="button" class="btn input-submit-btn">Submit</button>
                                     </form>
@@ -535,6 +535,9 @@
         
                     <div class="sidebar-menu-list">
                         <div class="row w-100 mb-2 mt-3">
+                            <div class="col-12 p-0">
+                                <div class="status-bar">Marshall</div>
+                            </div>
                             <div class="col first-col justify-content-center">
                                 <div class="sidebar-modal_wrapper">
                                     <div class="sidebar-menu__icon">
@@ -561,7 +564,7 @@
                             </div>
                         </div>
                         <div class="row w-100 mb-2">
-                            <div class="col justify-content-center active-sidebar-menu">
+                            <div class="col justify-content-center">
                                <div class="sidebar-modal_wrapper">
                                 <div class="sidebar-menu__icon">
                                     <img class="sidebar-menu__icon" src="./src/assets/icons/deposit-icon.png" alt="bank-icon">
@@ -573,7 +576,7 @@
                             </div>
                         </div>
                         <div class="row w-100 mb-2">
-                            <div class="col justify-content-center">
+                            <div class="col justify-content-center active-sidebar-menu">
                                 <div class="sidebar-modal_wrapper">
                                     <div class="sidebar-menu__icon">
                                         <img class="sidebar-menu__icon" src="./src/assets/icons/withdraw-icon.png" alt="bank-icon">
@@ -662,7 +665,6 @@
         <script src="./src/js/jquery-3.6.0.min.js"></script>
         <script src="./src/js/mobileModal.js"></script>
         <script src="./src/js/bootstrap.bundle.js"></script>
-        <script src="./src/js/bootstrap-dropdown.js"></script>
 
 </body>
 </html>
