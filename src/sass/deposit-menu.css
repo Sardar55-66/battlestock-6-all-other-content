@@ -343,6 +343,7 @@ img {
 }
 
 .sidebar-menu-list > div {
+  cursor: pointer;
   width: 95%;
 }
 
