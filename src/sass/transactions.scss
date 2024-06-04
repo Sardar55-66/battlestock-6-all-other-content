@@ -290,9 +290,6 @@ img {
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	width: 100%;
 	background-color: $background-color_6;
 	border-radius: 10px;
@@ -825,7 +822,229 @@ tbody {
 	display: flex;
 	width: 160px;
 }
+.deposit-container_header {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #FFD762;
+}
+
+
+
+.table {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Gordita';
+}
+.table>thead {
+	color: #FFD762;
+}
+.table>tbody>tr>td:nth-child(2)>img {
+	width: 20px;
+	height: 20px;
+	margin-bottom: 3px;
+}
+// .table>tbody>tr>td:nth-child(2), .table>tbody>tr>td:nth-child(3), .table>tbody>tr>td:nth-child(4), 
+// .table>tbody>tr>td:nth-child(5), .table>tbody>tr>td:nth-child(6), .table>tbody>tr>th {
+// 	font-size: 14px;
+// }
+.table>tbody>tr>td:nth-child(3) {
+	color: #FFD762;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th {
+	border-top: 1px solid #6A3F3A;
+}
+.table>thead>tr>th {
+	border-bottom: 1px solid #FFD762;
+}
+
+.mobile-table_container {
+	display: none;
+    padding-right: 20px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1024px;
+    height: 561px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: #fff;
+}
+
+.mobile-table_container::-webkit-scrollbar {
+    background-color: #260423;
+    width: 10px;
+    scroll-margin-top: 19px;
+}
+.mobile-table_container::-webkit-scrollbar-thumb {
+    position: relative;
+    background-color: #8D4987;
+    width: 2px;
+    border-radius: 6px;
+    scroll-margin-right: 5px;
+}
+.mobile-table-header {
+    margin-top: 10px;
+}
+.mobile-table_container>div {
+	border-bottom: 1px solid #6A3F3A;
+   	width: 100%;
+   	height: 160px;
+}
+
+.activate-info-panel {
+    display: none !important;
+}
+
+.mobile-table-stock-info_panel {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #260423;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile-table-number, .mobile-table-payment-info, .mobile-table-status, .mobile-table-creation-date {
+    font-size: 13px;
+    font-family: 'Gordita';
+    color: #FEFFAB;
+}
+
+.mobile-table-payment-info>span:nth-child(2) {
+    color: #FFD762;
+}
+
+.white-colored {
+    color: #fff;
+}
+
+.status-canceled {
+    color: #FF5151;
+}
+.status-completed {
+    color: #51FF62;
+}
+.status-processing {
+    color: #FF9E0D;
+}
+.mobile-table_type>img {
+    width: 18px;
+    height: 15px;
+}
+.column {
+    height: 20px;
+}
+
+
+
+
+
+// стили для стрелки
+
+
+.arrow-4 {
+    margin-left: 30px !important;
+    position: relative;
+    cursor: pointer;
+    margin:20px;
+}
+.arrow-4-left {
+    position: absolute;
+    background-color: transparent;
+    top: -28px;
+    left: 36px;
+    width: 7px;
+    height: 3px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+.arrow-4-left:after {
+    content: "";
+    background-color: #FFD762;
+    width: 7px;
+    height: 3px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+ 
+.arrow-4-right {
+    position: absolute;
+    background-color: transparent;
+    top: -28px;
+    left: 41px;
+    width: 7px;
+    height: 3px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+.arrow-4-right:after {
+    content: "";
+    background-color: #FFD762;
+    width: 7px;
+    height: 3px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+.open .arrow-4-left:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+.open .arrow-4-right:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1025px) {
+
+
+	.desktop-version-table {
+		display: none !important;
+	}
+	.mobile-table_container {
+		display: flex;
+	}
+
+    .dropdown-toggle::after {
+        left: 407px;
+    }
 	.dropdown-windows {
 		>div {
 			margin: 0 auto;
