@@ -889,6 +889,10 @@ tbody:last-child {
   color: #FFD762;
 }
 
+.table > thead > tr > th {
+  border-top: none;
+}
+
 .table > tbody > tr > td:nth-child(2) > img {
   width: 20px;
   height: 20px;
@@ -933,6 +937,18 @@ tbody:last-child {
   width: 2px;
   border-radius: 6px;
   scroll-margin-right: 5px;
+}
+
+.desktop-table_container {
+  height: 550px;
+}
+
+.table {
+  width: 99%;
+}
+
+.simplebar-scrollbar::before {
+  background-color: red;
 }
 
 .mobile-table-header {
@@ -1062,6 +1078,9 @@ tbody:last-child {
 }
 
 @media (max-width: 1025px) {
+  .desktop-table_header, .desktop-table_container {
+    display: none !important;
+  }
   .desktop-version-table {
     display: none !important;
   }
