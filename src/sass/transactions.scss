@@ -862,7 +862,7 @@ tbody {
 	border-top: 1px solid #6A3F3A;
 }
 .table>thead>tr>th {
-	border-bottom: 1px solid #FFD762;
+	border-bottom: none;
 }
 
 .mobile-table_container {
@@ -898,6 +898,18 @@ tbody {
 	width: 99%;
 }
 
+.table>thead {
+	z-index: 99;
+    position: sticky;
+    background-color: #3F0437;
+    top: 0;
+}
+
+.table>tbody {
+	position: relative;
+	z-index: 1;
+}
+
 .simplebar-scrollbar::before {
 	background-color: red;
   }
@@ -916,6 +928,7 @@ tbody {
 }
 
 .mobile-table-stock-info_panel {
+	padding: 8px;
     padding-left: 20px;
     width: 100%;
     display: flex;
@@ -1060,6 +1073,7 @@ tbody {
 	}
 	.mobile-table_container {
 		display: flex;
+		margin-top: 15px;
 	}
 
     .dropdown-toggle::after {
