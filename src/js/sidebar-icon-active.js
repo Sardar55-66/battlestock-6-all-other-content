@@ -4,7 +4,8 @@
 const targetEl = Array.from(document.querySelectorAll('.active-sidebar-menu'))
 
     targetEl.map(el => {
-        const nodeEl = el.querySelector('svg')
-        return nodeEl.setAttribute('stroke', '#FFD762')
+        const svg = el.querySelector('svg')
+        const path = svg.querySelector('path')
+        svg.setAttribute('stroke', '#FFD762')
+        path.setAttribute('fill', '#FFD762')
     })
-
